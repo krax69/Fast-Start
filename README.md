@@ -1,6 +1,8 @@
 <img width="1254" height="1254" alt="fastStart" src="https://github.com/user-attachments/assets/b2a8edee-416c-45f1-bd01-fcf1c30be482" />
-# Fast-Start
-##RU
+
+
+## RU
+
 # Fast Start
 
 Fast Start — это простая программа для Windows, которая позволяет запускать сразу несколько приложений одним нажатием. Можно создавать разные сценарии запуска для работы, игр, учебы или любых других задач и быстро переключаться между ними.
@@ -53,7 +55,9 @@ FastStart/
 ## Лицензия
 
 Проект распространяется по лицензии MIT.
-##EN
+
+## EN
+
 # Fast Start
 
 Fast Start is a simple Windows launcher that lets you start multiple applications with one click. You can create different launch scenarios for work, gaming, school, or anything else and switch between them whenever you need.
