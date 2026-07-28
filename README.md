@@ -5,31 +5,36 @@
 
 # Fast Start
 
-Fast Start — это простая программа для Windows, которая позволяет запускать сразу несколько приложений одним нажатием. Можно создавать разные сценарии запуска для работы, игр, учебы или любых других задач и быстро переключаться между ними.
+Fast Start — это простая программа для Windows, которая позволяет запускать сразу несколько приложений одним нажатием. Можно создавать разные сценарии запуска для работы, игр, учёбы или любых других задач и быстро переключаться между ними.
 
 ## Возможности
 
-* Запуск нескольких программ одновременно
+* Запуск нескольких программ одновременно с задержкой между ними
 * Создание, переименование и удаление сценариев
-* Добавление приложений через выбор файла
-* Автоматическое сохранение всех изменений
-* Простой интерфейс в тёмной теме
-* Быстрая и лёгкая работа
+* Добавление программ через выбор файла — поддерживаются `.exe` и ярлыки `.lnk`
+* Программы отображаются плитками с настоящими иконками (как в Проводнике)
+* Удобный выбор задержки запуска (секунды, стрелками ▲▼)
+* Остановка всех программ сценария одним нажатием
+* Автоматическое сохранение всех изменений в `scenarios.json`
+* Тёмный интерфейс
+* Лёгкая и быстрая работа
 
 ## Установка
 
 ```bash
 git clone https://github.com/krax69/Fast-Start
 cd FastStart
-pip install psutil
+pip install psutil pywin32 Pillow
 python main.py
 ```
+
+`pywin32` и `Pillow` нужны только для отображения настоящих иконок программ. Без них Fast Start тоже работает — вместо иконок будет использоваться заглушка.
 
 ## Сборка EXE
 
 ```bash
 pip install pyinstaller
-pyinstaller --onefile --windowed --icon=rocket.ico main.py
+pyinstaller --onefile --windowed --name "FastStart" --icon=rocket.ico --hidden-import win32com --hidden-import win32com.client --hidden-import win32timezone main.py
 ```
 
 После сборки готовый `.exe` файл появится в папке `dist`.
@@ -51,6 +56,7 @@ FastStart/
 * Python 3.10 или новее
 * Tkinter
 * psutil
+* pywin32 и Pillow (опционально, для иконок программ)
 
 ## Лицензия
 
@@ -64,11 +70,14 @@ Fast Start is a simple Windows launcher that lets you start multiple application
 
 ## Features
 
-* Launch several programs at once
+* Launch several programs at once, with a configurable delay between each
 * Create, rename and delete scenarios
-* Add applications using a file picker
-* Automatically save all changes
-* Simple dark interface
+* Add programs via a file picker — supports both `.exe` files and `.lnk` shortcuts
+* Programs are shown as tiles with real icons (just like File Explorer)
+* Easy delay selection with a spinner (seconds, ▲▼ arrows)
+* Stop every program in a scenario with one click
+* Automatically saves all changes to `scenarios.json`
+* Dark interface
 * Lightweight and fast
 
 ## Installation
@@ -76,15 +85,17 @@ Fast Start is a simple Windows launcher that lets you start multiple application
 ```bash
 git clone https://github.com/krax69/Fast-Start
 cd FastStart
-pip install psutil
+pip install psutil pywin32 Pillow
 python main.py
 ```
+
+`pywin32` and `Pillow` are only needed to show real program icons. Fast Start still works without them — a placeholder icon is used instead.
 
 ## Build
 
 ```bash
 pip install pyinstaller
-pyinstaller --onefile --windowed --icon=rocket.ico main.py
+pyinstaller --onefile --windowed --name "FastStart" --icon=rocket.ico --hidden-import win32com --hidden-import win32com.client --hidden-import win32timezone main.py
 ```
 
 The compiled executable will be available in the `dist` folder.
@@ -106,6 +117,7 @@ FastStart/
 * Python 3.10+
 * Tkinter
 * psutil
+* pywin32 and Pillow (optional, for program icons)
 
 ## License
 
