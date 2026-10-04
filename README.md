@@ -1,5 +1,6 @@
 <img width="1254" height="1254" alt="fastStart" src="https://github.com/user-attachments/assets/b2a8edee-416c-45f1-bd01-fcf1c30be482" />
 
+w2.1
 
 ## RU
 
