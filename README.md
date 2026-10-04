@@ -10,6 +10,7 @@ Fast Start — это простая программа для Windows, кото
 ## Возможности
 
 * Запуск нескольких программ одновременно с задержкой между ними
+* Режим «ждёт завершения» — галочка «⏳ Ждать закрытия предыдущих приложений» в диалоге добавления
 * Создание, переименование и удаление сценариев
 * Добавление программ через выбор файла — поддерживаются `.exe` и ярлыки `.lnk`
 * Программы отображаются плитками с настоящими иконками (как в Проводнике)
@@ -18,6 +19,8 @@ Fast Start — это простая программа для Windows, кото
 * Автоматическое сохранение всех изменений в `scenarios.json`
 * Тёмный интерфейс
 * Лёгкая и быстрая работа
+* Смена темы — ☀️/🌙 в шапке, тёмная/светлая палитра
+  
 
 ## Установка
 
@@ -70,15 +73,17 @@ Fast Start is a simple Windows launcher that lets you start multiple application
 
 ## Features
 
-* Launch several programs at once, with a configurable delay between each
-* Create, rename and delete scenarios
-* Add programs via a file picker — supports both `.exe` files and `.lnk` shortcuts
-* Programs are shown as tiles with real icons (just like File Explorer)
-* Easy delay selection with a spinner (seconds, ▲▼ arrows)
-* Stop every program in a scenario with one click
-* Automatically saves all changes to `scenarios.json`
+* Launch multiple programs simultaneously with delays between them
+* "Wait for completion" mode — "⏳ Wait for previous applications to close" checkbox in the add dialog
+* Create, rename, and delete scenarios
+* Add programs by selecting files — supports `.exe` files and `.lnk` shortcuts
+* Programs displayed as tiles with actual icons (like in File Explorer)
+* Easy launch delay selection (seconds, using ▲▼ arrows)
+* Stop all programs in a scenario with a single click
+* Automatic saving of all changes to `scenarios.json`
 * Dark interface
-* Lightweight and fast
+* Lightweight and fast performance
+* Theme switching — ☀️/🌙 in the header; dark/light color palette
 
 ## Installation
 
